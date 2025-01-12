@@ -103,17 +103,17 @@ echo "[+] Downloading the pif.json"
 if [ -f /data/adb/modules/playintegrityfix/migrate.sh ]; then
     if [ -d /data/adb/modules/tricky_store ]; then
         # Download osmosis.json 
-        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/daboynb/autojson/main/osmosis.json > /dev/null 2>&1 || \
-        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/daboynb/autojson/main/osmosis.json
+        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/louise010460/Safetynet1-test/refs/heads/main/Pif1.json > /dev/null 2>&1 || \
+        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/louise010460/Safetynet1-test/refs/heads/main/Pif1.json
     else
         # If tricky_store does not exist, download device_osmosis.json 
-        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/daboynb/autojson/main/device_osmosis.json > /dev/null 2>&1 || \
-        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/daboynb/autojson/main/device_osmosis.json
+        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/louise010460/Safetynet1-test/refs/heads/main/Pif2.json > /dev/null 2>&1 || \
+        /system/bin/curl -o /data/adb/modules/playintegrityfix/custom.pif.json https://raw.githubusercontent.com/louise010460/Safetynet1-test/refs/heads/main/Pif2.json
     fi
 else
     # Download chiteroman.json 
-    /system/bin/curl -L "https://raw.githubusercontent.com/daboynb/autojson/main/chiteroman.json" -o /data/adb/pif.json > /dev/null 2>&1 || \
-    /system/bin/curl -L "https://raw.githubusercontent.com/daboynb/autojson/main/chiteroman.json" -o /data/adb/pif.json
+    /system/bin/curl -L "https://raw.githubusercontent.com/louise010460/Safetynet1-test/refs/heads/main/Pif3.json" -o /data/adb/pif.json > /dev/null 2>&1 || \
+    /system/bin/curl -L "https://raw.githubusercontent.com/louise010460/Safetynet1-test/refs/heads/main/Pif3.json" -o /data/adb/pif.json
 fi
 echo
 
